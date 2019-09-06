@@ -31,25 +31,26 @@
 <body>
 <!-- partial:index.partial.html -->
    <!-- Start Navbar -->
-    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" id="triangle">
+    <nav class="navbar navbar-default" id="triangle">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#codebrainery-toggle-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar">tes</span>
+            <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand hvr-pop" id="logo-navbar-middle" href="#"><img  src="images/logo_full.png" style="width: 120px; height: 44px"></a>
         </div>
-        <div class="navbar-collapse collapse">
+
+        <div class="collapse navbar-collapse" id="codebrainery-toggle-nav">
           <ul class="nav navbar-nav navbar-left">
             <li class="active"><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GAMES <span class="caret"></a>
                 <ul class="dropdown-menu"> 
                     <li><a href="capsacity.html">Capsa City</a></li>
-                    <li><a href="metropoly.html">Metropoly</a></li>
+                    <li><a href="store.html">Metropoly</a></li>
                 </ul>
             </li>
             </ul>
@@ -58,10 +59,10 @@
             <li><a href="agenda.html">AGENDA</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    <!--End Navbar-->
+        </div>
+
+      </div> <!-- close container div -->
+    </nav> <!-- close navbar nav -->
 
     <!-- Start Section -->
     <section>
