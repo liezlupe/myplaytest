@@ -127,18 +127,23 @@ h1 {
 /*Navbar Toggle*/
 .navbar-toggle {margin-top: 18px}
 /*Carousel*/
-.carousel-caption
-{
-	bottom: 70px;
-	background: rgba(3,3,3,0.3);
-	padding-right: 20px;
-	padding-left: 20px
-}
+
 .carousel-indicators {bottom: 0}
 .carousel-indicators li {height: 15px; width: 15px; border: 1px solid #EEE}
 .carousel-indicators .active {height: 17px; width: 17px; background-color: #E41B17}
+.carousel-inner > .item > img { width: 100%; padding-top: 85px; padding: 76px;}
+
+@media(max-width: 339px){
+	.carousel-indicators {bottom: 0}
+.carousel-indicators li {height: 15px; width: 15px; border: 1px solid #EEE}
+.carousel-indicators .active {height: 17px; width: 17px; background-color: #E41B17}
 .carousel-inner > .item > img { width: 100%; padding-top: 85px; padding: 140px;}
+
+
+}
+
 /**********End Overriding Bootstrap********/
+
 /*Start Section About*/
 .about {padding-top: 60px; padding-bottom: 60px}
 .about .about-paragraph1 {color: #888; font-size: 25px; margin-top: 15px}
@@ -517,37 +522,7 @@ h1 {
 		margin: 20px auto;
 	}
 }
-/*
-@media(min-width: 671px) and (max-width: 767px)
-{
-	.navbar-inverse .navbar-nav> li> a
-	{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.navbar-fixed-top .navbar-collapse,
-	.navbar-fixed-bottom .navbar-collapse
-	{
-		max-height: none;
-	}
-	h1{font-size:30px;}
-	.h1{font-size:30px;}
-	.testimonials .carousel-inner {min-height: 300px}
-	.testimonials .carousel-indicators li
-	{
-		width: 80px;
-		height: 80px;
-	}
-	.testimonials .carousel-indicators li.active
-	{
-		width: 80px;
-		height: 80px;
-	}
-	.subscribe .form-control
-	{
-		margin: 20px auto;
-	}
-}*/
+
 @media(min-width: 468px) and (max-width: 670px)
 {
 	.navbar-inverse .navbar-nav> li> a
@@ -610,7 +585,7 @@ h1 {
 
 }
 /*Small Screen*/
-@media(min-width: 768px) and (max-width: 991px)
+@media(min-width: 300px) 
 {
 	.carousel-caption {margin-top:-200px;}
 	.lead{font-size:14px;}
@@ -1013,6 +988,7 @@ h1 {
 
 @media(min-width: 768px){
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+padding-top: 10px;
 margin-right: 185px;
 margin-left: 185px;
 }
