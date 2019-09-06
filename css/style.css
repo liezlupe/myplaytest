@@ -995,7 +995,7 @@ h1 {
 @media(min-width: 768px){
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
 padding-top: 10px;
-margin-right: 185px;
+margin-right: 120px;
 margin-left: 185px;
 }
 
