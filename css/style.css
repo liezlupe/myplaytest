@@ -87,6 +87,8 @@ h1 {
 	padding-bottom: 25px;
 	font-size: 16px
 }
+
+@media(min-width: 1200px){
 .navbar-inverse .navbar-brand {color:#BBB; font-size: 30px; line-height: 40px}
 #logo-navbar-middle {
 	display: flex;
@@ -96,6 +98,12 @@ h1 {
   left: 0;
   top: 0;
 }
+}
+
+.navbar-toggle{
+	background-color:#000;
+}
+
 .navbar-inverse .navbar-brand span {color: #F41B17}
 .dropdown-menu  {background-color: #333; border-top: 3px solid #F41B17; min-width: 200px}
 .navbar-right .dropdown-menu {left: 0; right: auto}
