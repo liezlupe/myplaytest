@@ -32,6 +32,8 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
     display: flex;
     background-position: ;
 }
+
+
 .banner:before {
     content: "";
     float: left;
@@ -229,25 +231,36 @@ h1 {
 	line-height: 100px;
 	border: 2px solid #FFF;
 }
+
+.card {
+ width: 232px;                 /* Set width of cards */
+  border: 1px solid #beabe6;    /* Set up Border */
+  border-radius: 4px;           /* Slightly Curve edges */
+  overflow: hidden;             /* Fixes the corners */
+  display: flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+
+}
+.percent-text{
+	color:yellow;
+}
 .price-table .price-box ul {line-height: 250%; font-size: 15px}
 .price-table .price-box a {margin-bottom: 5px}
 /*End Section Price Table*/
-/*Start Section Our Team*/
-.our-team
-{
-	background: url('././game2.png') no-repeat center center fixed;
-	min-height: 600px
+
+/*start text-card*/
+.text-card {
+  color: #D32F2F;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #EF9A9A;
+  background-color: #6c4a9a;
+  padding: 5px 10px;
 }
-.team
-{
-	background: rgba(2, 2, 2, 0.75);
-	color: #FFF;
-	min-height: 600px;
-	padding-top: 40px;
-	padding-bottom: 40px
-}
-.our-team .person {margin-bottom: 40px}
-/*End Section Our Team*/
+
+
+
 /*Start Section Subscribe*/
 .subscribe {padding-top: 40px; padding-bottom: 70px; background: #EEE}
 .subscribe .h1
@@ -752,12 +765,7 @@ h1 {
   width: 30rem;
 }
 
-.card {
-  background: white;
-  border: 0px;
-  border-radius: 0.3rem;
-  width: 100%;
-}
+
 
 .card-text{
   text-align: justify;
@@ -779,14 +787,12 @@ h1 {
 }
 
 .card-header {
-  background: $dark2;
-  &::before {
-    content: '';
-    position: absolute;
-    right: 100%;
-    border: 1rem solid transparent;
-    border-right: 1.25rem solid $dark2;
-  }
+  background-color: #9a71d0;
+   
+}
+
+.card-footer {
+  background-color: #e3dbec;  
 }
 
 .tag {
