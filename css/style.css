@@ -237,8 +237,10 @@ h1 {
   border: 1px solid #beabe6;    /* Set up Border */
   border-radius: 4px;           /* Slightly Curve edges */
   overflow: hidden;             /* Fixes the corners */
-  display: flex;                /* Children use Flexbox */
+  display: inline-flex;                /* Children use Flexbox */
   flex-direction: column;       /* Rotate Axis */
+  margin:10px;
+
 
 }
 .percent-text{
@@ -997,6 +999,19 @@ h1 {
 padding-top: 10px;
 margin-right: 120px;
 margin-left: 185px;
+}
+
+@media only screen and (max-width: 500px){
+	.card {
+	 width: 232px;                 /* Set width of cards */
+	 border: 1px solid #beabe6;    /* Set up Border */
+ 	 border-radius: 4px;     
+ 	 margin: 10px;      /* Slightly Curve edges */
+  	 overflow: hidden;             /* Fixes the corners */
+  	 display: inline-flex;                /* Children use Flexbox */
+ 	 flex-direction: column;       /* Rotate Axis */
+
+}
 }
 
 /*form*/
