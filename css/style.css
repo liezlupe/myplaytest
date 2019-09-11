@@ -1,5 +1,8 @@
 {padding-top: 70px}
 h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
+body, html {
+	height: 100%;
+}
 /**********Start Overriding Bootstrap********/
 
 .games {
@@ -52,22 +55,12 @@ h1 {
     margin-top: 0;
 }
 
-.middle-agenda{
-	background-color: aliceblue;
-	margin-bottom: 120px;
-}
+
 
 .job-banner{
 	background-color: aliceblue;
 	margin-bottom: 120px;
 	padding-top: 100px;
-}
-
-.text-agenda{	
-    padding: 42px 193px 68px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.7em;
 }
 
 /*Main Navbar*/
@@ -233,16 +226,18 @@ h1 {
 }
 
 .card {
- width: 232px;                 /* Set width of cards */
+ width: 100%;                 /* Set width of cards */
   border: 1px solid #beabe6;    /* Set up Border */
   border-radius: 4px;           /* Slightly Curve edges */
   overflow: hidden;             /* Fixes the corners */
   display: inline-flex;                /* Children use Flexbox */
   flex-direction: column;       /* Rotate Axis */
   margin:10px;
-
-
 }
+.img-index{
+	width: 100%;
+}
+
 .percent-text{
 	color:yellow;
 }
@@ -568,7 +563,7 @@ h1 {
 		margin: 20px auto;
 	}
 }
-@media(min-width: 671px) and (max-width: 767px)
+@media(min-width: 200px) and (max-width: 1200px)
 {
 	.navbar-inverse .navbar-nav> li> a
 	{
@@ -597,6 +592,38 @@ h1 {
 	{
 		margin: 20px auto;
 	}
+
+	.card{
+		width: 100%;
+	    border: 1px solid #beabe6;
+	    border-top-color: rgb(190, 171, 230);
+	    border-top-style: solid;
+	    border-top-width: 1px;
+	    border-right-color: rgb(190, 171, 230);
+	    border-right-style: solid;
+	    border-right-width: 1px;
+	    border-bottom-color: rgb(190, 171, 230);
+	    border-bottom-style: solid;
+	    border-bottom-width: 1px;
+	    border-left-color: rgb(190, 171, 230);
+	    border-left-style: solid;
+	    border-left-width: 1px;
+	    border-image-source: initial;
+	    border-image-slice: initial;
+	    border-image-width: initial;
+	    border-image-outset: initial;
+	    border-image-repeat: initial;
+	    border-radius: 4px;
+	    overflow: hidden;
+	    display: inline-flex;
+	    flex-direction: column;
+	    margin: 10px;
+	}
+
+	.img-index{
+		width: 100%;
+	}
+
 
 }
 /*Small Screen*/
@@ -1002,6 +1029,10 @@ margin-right: 120px;
 margin-left: 185px;
 }
 
+.containerindex{
+	background-color: #e9f6fe;
+}
+
 @media only screen and (max-width: 500px){
 	.card {
 	 width: 232px;                 /* Set width of cards */
@@ -1127,4 +1158,33 @@ label{
 .formgroup-error{
 	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
 	color: red;
+}
+
+/*AgendaPage css*/
+.agenda-header{
+	background-image: url('images/banner011.png');
+}
+.agenda-pages{
+	background-color: #fff;
+}
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: 253px;
+	margin-top: 53px;
+
+}
+
+@media(min-width: 550px){
+	.img-responsive{
+		max-width: 100%;
+		height: auto;
+		display: block;
+		width:inherit;
+	}
+}
+
+#agenda{
+	padding-bottom: 200px;
 }
