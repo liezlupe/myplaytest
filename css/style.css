@@ -1,20 +1,21 @@
-{padding-top: 70px}
-h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
-body, html {
+/**********Start Overriding Bootstrap********/
+{
+	padding: 0; margin: 0;
+}
+
+html, body{
 	height: 100%;
 }
-/**********Start Overriding Bootstrap********/
 
 .games {
 	background-image: url('images/bg.png');
-	background-size: cover;
+	background-size: auto;
 }
 
 .banner-games {
     background: url('images/banner01.png') no-repeat center;
     padding: 450px 87px 50px;
     display: flex;
-    background-position: ;
 }
 
 /*Banner agenda*/
@@ -31,9 +32,11 @@ body, html {
 
 .banner {
     background: url('images/aboutus_fams.png') no-repeat center;
-    padding: 450px 87px 50px;
+    padding: 325px 87px 50px;
     display: flex;
-    background-position: ;
+}
+.banner img{
+	width: 100%;
 }
 
 
@@ -51,11 +54,31 @@ body, html {
     /*text-align: center;*/
     padding: 270px 50px 10px;
 }
-h1 {
-    margin-top: 0;
+
+.content-about {
+    /*text-align: center;*/
+    padding: 0px 60px 10px;
+    margin: 46px 132px -235px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.content-about p {
+	margin: 0px 8px 374px;
+}
+
+.middle-about{
+	background: url('images/frame_quote.png') no-repeat center ;
+    padding: 97px 86px 53px;
+    display: flex;
+    background-size: 100%;
 }
 
 
+h1 {
+    margin-top: 0;
+}
 
 .job-banner{
 	background-color: aliceblue;
@@ -85,14 +108,15 @@ h1 {
 
 @media(min-width: 1200px){
 .navbar-inverse .navbar-brand {color:#BBB; font-size: 30px; line-height: 40px}
-#logo-navbar-middle {
-	display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 103%;
-  left: 0;
-  top: 0;
-}
+#logo-navbar-middle 
+	{
+	  display: flex;
+	  justify-content: center;
+	  position: absolute;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	}
 }
 
 .navbar-toggle{
@@ -139,61 +163,14 @@ h1 {
 
 /**********End Overriding Bootstrap********/
 
-/*Start Section About*/
-.about {padding-top: 60px; padding-bottom: 60px}
-.about .about-paragraph1 {color: #888; font-size: 25px; margin-top: 15px}
-.about .about-paragraph2 {color: #888; font-size: 17px; margin-top: 15px}
-.about h1 {font-weight: bold}
-.about h2 {font-weight: bold}
-.about h1 span {color: #E41B17}
-.about h2 span {color: #E41B17}
-/*End Section About*/
-/*Start Section Features*/
-.features {overflow: hidden; background-color: #EEE; padding-top: 50px; padding-bottom: 50px}
-.features .feat {margin-bottom: 30px}
-.features .feat p {line-height: 2em}
-.features .feat span.glyphicon {font-size: 20px; margin-bottom: 10px; color: #666}
-/*End Section Features*/
-/*Start Section Testimonials*/
-.testimonials {padding-top: 50px; padding-bottom: 50px}
-.testimonials .lead {line-height: 2em; margin-bottom: 10px}
-.testimonials span {font-size: 18px; font-weight: bold; color: #E41B17}
-.testimonials .carousel-indicators
-{
-	//postion: static;
-	//width: 100%;
-	//margin-left: auto;
-	padding-top: 20px
-}
-.testimonials .carousel-indicators li
-{
-	text-indent: 0;
-	width: 80px;
-	height: 80px;
-	opacity: 0.5;
-	border: 2px solid #FFF;
-	border-radius: 50%;
-	overflow: hidden;
-	margin: 5px;
-}
-.testimonials .carousel-indicators li.active
-{
-	width: 80px;
-	height: 80px;
-	opacity: 1;
-	background: none;
-	border: 2px solid #E41B17
-}
-
-.testimonials .carousel-indicators li img {max-width: 100%}
-/*End Section Testimonials*/
 /*Start Section Price Table*/
 .price-table 
 {
 	overflow: hidden; 
 	/*background: #EEE; */
 	padding-top: 40px; 
-	padding-bottom: 40px
+	padding-bottom: 229px;
+	margin: 0px;
 }
 .price-table .price-box
 {
@@ -234,8 +211,18 @@ h1 {
   flex-direction: column;       /* Rotate Axis */
   margin:10px;
 }
+
+.card-new{
+	border: 1px solid #e5e0e1;
+	border-radius: 2px;
+	overflow: hidden;             /* Fixes the corners */
+  display: inline-flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+  margin:10px;
+}
 .img-index{
 	width: 100%;
+	padding: 10px;
 }
 
 .percent-text{
@@ -258,83 +245,6 @@ h1 {
 
 
 
-/*Start Section Subscribe*/
-.subscribe {padding-top: 40px; padding-bottom: 70px; background: #EEE}
-.subscribe .h1
-{
-	font-weight: bold;
-	color: #888;
-	letter-spacing: 2px;
-	margin-bottom: 20px
-}
-.subscribe h2
-{
-	font-weight: bold;
-	color: #888;
-	letter-spacing: 2px;
-	margin-bottom: 20px
-}
-.subscribe p {margin-bottom: 30px}
-.subscribe .form-control {border-radius: 0; margin-right: -5px; width: 300px}
-.subscribe button {border-radius: 0}
-/*End Section Subscribe*/
-/*Start Section Stats*/
-.statistics
-{
-	background: url('http://www.lgcomputers.it/lgcomputers/images/page-background.jpg') no-repeat center center fixed;
-	min-height: 300px
-}
-.statistics .data
-{
-	background-color: rgba(3, 3, 3, 0.7);
-	color: #B6B5B5;
-	min-height: 300px;
-	padding-top: 40px;
-	padding-bottom: 70px
-}
-.statistics .stats {margin-bottom: 30px}
-.statistics .stats:hover {color: #FFF}
-.statistics p {font-size: 60px; font-weight: 600px; margin-bottom: 0}
-.statistics span {font-size: 16px}
-/*End Section Stats*/
-/*Start Section Our Skills*/
-.our-skills {padding-top: 40px; padding-bottom: 70px}
-.our-skills h3 {font-weight: bold; margin-top: 0}
-.our-skills .progress {height: 36px}
-.our-skills .progress-bar
-{
-	line-height: 36px;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: left;
-	text-indent: 10px
-}
-/*End Section Our Skills*/
-/*Start Section Contact Us*/
-.contact-us
-{
-	overflow:hidden;
-	background: url('https://insurancenetusa.com/wp-content/uploads/2015/10/retirement-insurance-slide.jpg') no-repeat center center fixed;
-	min-height: 300px
-}
-.contact-us .fields
-{
-	background-color: rgba(3, 3, 3, 0.8);
-	color: #DDD;
-	min-height: 300px;
-	padding-top: 40px;
-	padding-bottom: 40px
-}
-.contact-us p {margin-bottom: 40px}
-.contact-us textarea {height: 108px}
-.contact-us input[type="text"],
-.contact-us textarea
-{
-	background: rgba(80, 70, 70, 0.5);
-	color: #FFF;
-	border: none
-}
-/*End Section Contact Us*/
 /*Start Section Our Clients*/
 .our-clients {background: #EEE; padding-top: 20px; padding-bottom: 20px}
 .our-clients img
@@ -624,6 +534,12 @@ h1 {
 		width: 100%;
 	}
 
+.banner-agenda img{
+	width: 100%;
+	margin:-24px 0px 34px;
+}
+
+
 
 }
 /*Small Screen*/
@@ -822,6 +738,9 @@ h1 {
 
 .card-footer {
   background-color: #e3dbec;  
+}
+.card-footer-index{
+  background-color: #fff;
 }
 
 .tag {
@@ -1022,17 +941,58 @@ h1 {
 	background-color: #17d1e400;
 }
 
-@media(min-width: 768px){
+@media only screen and (max-width: 1400px)
+{
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
 padding-top: 10px;
 margin-right: 120px;
-margin-left: 185px;
+margin-left: 118px;
 }
+.container{
+	padding-right: 110px;
+	padding-left: 110px
+}
+}
+
+@media (min-width: 200px){
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+margin-right: 0px;
+margin-left: 0px;
+}
+.container{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+}
+
+@media (min-width: 768px){
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+margin-left: 0;
+}
+}
+
 
 .containerindex{
 	background-color: #e9f6fe;
 }
 
+.index-H2{
+	text-align: left;
+	margin:0px;
+	font-weight: 800;
+	color: #353636ba;
+}
+
+.index-p{
+	text-align: left;
+
+}
+
+.index-div{
+	padding: 16px;
+}
 @media only screen and (max-width: 500px){
 	.card {
 	 width: 232px;                 /* Set width of cards */
@@ -1044,6 +1004,7 @@ margin-left: 185px;
  	 flex-direction: column;       /* Rotate Axis */
 
 }
+
 }
 
 /*form*/
@@ -1161,9 +1122,13 @@ label{
 }
 
 /*AgendaPage css*/
-.agenda-header{
-	background-image: url('images/banner011.png');
+.header-agenda{
+	width:100%;
 }
+.header-agenda img{
+	width: 100%;
+}
+
 .agenda-pages{
 	background-color: #fff;
 }
@@ -1175,7 +1140,6 @@ label{
 	margin-top: 53px;
 
 }
-
 @media(min-width: 550px){
 	.img-responsive{
 		max-width: 100%;
@@ -1187,4 +1151,14 @@ label{
 
 #agenda{
 	padding-bottom: 200px;
+}
+
+.container-agenda{
+	padding:25px 275px 25px;
+}
+
+/*store*/
+.banner-store img{
+	width: 100%;
+	margin:-24px 0px 34px;
 }
