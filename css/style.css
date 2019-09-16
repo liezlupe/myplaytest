@@ -19,27 +19,83 @@ html, body{
 }
 
 /*Banner agenda*/
-    
-.header-banner {
 
-    background-image: url('images/aboutus_fams.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    /*background-size: cover;*/
-    width: 100%;
-    height: 1000px;
-}
 
-.banner {
-    background: url('images/aboutus_fams.png') no-repeat center;
-    padding: 325px 87px 50px;
+.banner-about {
+    background:url('images/aboutus_fams.png') no-repeat center center;
+    background-size: contain;
+    color: #111010;
     display: flex;
 }
-.banner img{
-	width: 100%;
+.banner-about:before {
+    content: "";
+    float: left;
+    padding-bottom: 40%;
+}
+.banner-about:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container-about{
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-about {
+    text-align: center;
+    padding: 6px 230px 20px;
 }
 
+.content-about h1{
+	text-align: left;
+}
 
+.content-about p{
+	text-align: left;
+}
+
+.content-p-about p{
+	color: #010101;
+	margin: -35px 0px 271px;
+	text-align: center;
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+h1 {
+    margin-top: 0;
+}
+/*Job css*/
+
+.header-job{
+	background-image: url('images/frame_quote.png');
+	width: 100%;
+	height: inherit;
+	margin: -17px 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+.job-text{
+	position: absolute;
+  	height: 100%;
+}
+
+/*form job*/
+
+/*banner - job */
+
+.banner {
+    background: url('images/frame_quote.png') no-repeat;
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    margin: -17px 0px;
+
+}
 .banner:before {
     content: "";
     float: left;
@@ -50,41 +106,56 @@ html, body{
     display: table;
     clear: both;
 }
-.content {
-    /*text-align: center;*/
-    padding: 270px 50px 10px;
-}
-
-.content-about {
-    /*text-align: center;*/
-    padding: 0px 60px 10px;
-    margin: 46px 132px -235px;
-    text-align: center;
-    font-size: x-large;
-    font-weight: 700;
-}
-
-.content-about p {
-	margin: 0px 8px 374px;
-}
-
-.middle-about{
-	background: url('images/frame_quote.png') no-repeat center ;
-    padding: 97px 86px 53px;
+.container-job {
+    max-width: 768px;
+    margin: 0 auto;
     display: flex;
-    background-size: 100%;
+    justify-content: center;
+    align-items: center;
 }
+.content {
+    text-align: center;
+    padding:0px 0px 132px;
+    color: black;
+}
+
 
 
 h1 {
     margin-top: 0;
 }
 
-.job-banner{
-	background-color: aliceblue;
-	margin-bottom: 120px;
-	padding-top: 100px;
+@media only screen and (max-width: 1400px) {
+  .content p {
+  	font-size: 2vw;
+    margin: 0 0 170px;
+    font-weight: bold;
+  }
 }
+
+@media (max-width: 1400px) and (max-width: 500px)  {
+.content p {
+	font-size: 2vw;
+    margin: 37px 0 56px;
+    font-weight: bold;
+  }
+
+.content-about {
+    text-align: center;
+    padding: 8px 86px 68px;
+}
+
+.content-p-about p{
+	color: #010101;
+	margin: 28px 104px 122px;
+	text-align: center;
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+}
+/*End job CSS*/
+
 
 /*Main Navbar*/
 .navbar {min-height: 70px}
@@ -169,7 +240,8 @@ h1 {
 	overflow: hidden; 
 	/*background: #EEE; */
 	padding-top: 40px; 
-	padding-bottom: 229px;
+	/*padding-bottom: 229px;*/
+	
 	margin: 0px;
 }
 .price-table .price-box
@@ -220,10 +292,7 @@ h1 {
   flex-direction: column;       /* Rotate Axis */
   margin:10px;
 }
-.img-index{
-	width: 100%;
-	padding: 10px;
-}
+
 
 .percent-text{
 	color:yellow;
@@ -534,10 +603,6 @@ h1 {
 		width: 100%;
 	}
 
-.banner-agenda img{
-	width: 100%;
-	margin:-24px 0px 34px;
-}
 
 
 
@@ -909,12 +974,19 @@ h1 {
 	.panel-title {
 		font-size: 14px;
 		background-color: #faa31b;
+		border-radius: 5px;
 	}
 
 	.panel-title > a {
 		display: block;
 		padding: 15px;
 		text-decoration: none;
+	}
+	.panel-title > a:focus {
+		display: block;
+		padding: 15px;
+		text-decoration: none;
+		background-color: #edf8fe;
 	}
 
 	.more-less {
@@ -1007,126 +1079,39 @@ margin-left: 0;
 
 }
 
-/*form*/
-
-
-#form{
-	height: 100%;	
-	background-color: #98d4f3;
-	overflow: hidden;
-	position: relative;
-	
-}
-form{
-	color: #000;
-	position: relative;
-	
-	
-}
-label, input, textarea{
-	display: block;	
-}
-input, textarea{
-	width: 500px;	
-	border: none;
-	border-radius: 20px;
-	outline: none;
-	padding: 10px;
-	font-family: 'Sniglet', cursive;
-	font-size: 1em;
-	color: #676767;
-	transition: border 0.5s;
-	-webkit-transition: border 0.5s;
-	-moz-transition: border 0.5s;
-	-o-transition: border 0.5s;
-	border: solid 3px #c7c7c7;	
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	
-}
-input:focus, textarea:focus{
-	border: solid 3px #77bde0;	
+/*column */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
 }
 
-textarea{
-	height: 100px;	
-	resize: none; 
-	overflow: auto;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-input, select{
-	width: 500px;	
-	border: none;
-	border-radius: 20px;
-	outline: none;
-	padding: 10px;
-	font-family: 'Sniglet', cursive;
-	font-size: 1em;
-	color: #676767;
-	transition: border 0.5s;
-	-webkit-transition: border 0.5s;
-	-moz-transition: border 0.5s;
-	-o-transition: border 0.5s;
-	border: solid 3px #c7c7c7;	
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 
-input[type="submit"]{
-	background-color: #F90;
-	color: white;
-	height: 50px;
-	cursor: pointer;
-	margin-top: 30px;
-	font-size: 1.29em;
-	font-family: 'Sniglet', cursive;
-	-webkit-transition: background-color 0.5s;
-	-moz-transition: background-color 0.5s;
-	-o-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-input[type="submit"]:hover{
-	background-color: #e58f0e;
-	
-}
-label{
-	font-size: 15px;
-	margin-top: 20px;
-	padding-left: 20px;
-}
-.formgroup, .formgroup-active, .formgroup-error{
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: 10.5%;
-	transition: background-image 0.7s;
-	-webkit-transition: background-image 0.7s;
-	-moz-transition: background-image 0.7s;
-	-o-transition: background-image 0.7s;
-	width: 566px;
-	padding-top: 2px;
-}
-
-.formgroup{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
-}
-.formgroup-active{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
-}
-.formgroup-error{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
-	color: red;
-}
 
 /*AgendaPage css*/
 .header-agenda{
 	width:100%;
+	margin: -18px 0px;
 }
 .header-agenda img{
 	width: 100%;
+
 }
 
 .agenda-pages{
@@ -1150,7 +1135,7 @@ label{
 }
 
 #agenda{
-	padding-bottom: 200px;
+	padding-bottom: 20px;
 }
 
 .container-agenda{
@@ -1158,7 +1143,33 @@ label{
 }
 .container-agenda iframe{
 	width: 100%;
+
 }	
+
+@media only screen and (max-width: 1400px) {
+  .col-xs-12 img {
+  	width: 50%;
+  	margin-left: 63px;
+  	margin: 15px 94px;
+  }
+
+  iframe{
+  	padding: 66px 76px 0px;
+  }
+  .col-lg-6 col-xs-12 img{
+  	width: 50%; margin-left: 203px;
+  }
+
+  .card-body img .img-index{
+  	width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+	.container-agenda{
+		padding:28px 0px 19px;
+	}
+}
 
 /*store*/
 .banner-store img{
