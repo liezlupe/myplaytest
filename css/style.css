@@ -195,24 +195,31 @@ h1 {
 }
 
 .navbar-inverse .navbar-brand span {color: #F41B17}
-.dropdown-menu  {background-color: #333; border-top: 3px solid #F41B17; min-width: 200px}
+.dropdown-menu  {background-color: #fff; border-top: 3px solid #fff; min-width: 200px}
 .navbar-right .dropdown-menu {left: 0; right: auto}
 .dropdown-menu > li > a 
 {
-  color: #FFF;
-  padding: 6px 20px;
+  color: #000;
+  padding: 3px 4px;
   -webkit-transition: padding 0.5s ease;
   -moz-transition: padding 0.5s ease;
   -o-transition: padding 0.5s ease;
-  transition: padding 0.5s ease
+  transition: padding 0.5s ease;
+  border-bottom: 1px solid #ddd;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus 
 {
   color: #FFF;
-  background-color: #F41B17;
+  background-color: #ddd;
   padding-left: 25px
 }
+
+.dropdown-menu > li > a > img {
+	width: 23%;
+	margin: 5px;
+} 
+
 .dropdown-menu .divider {background-color: #871818}
 /*Navbar Toggle*/
 .navbar-toggle {margin-top: 18px}
@@ -1112,6 +1119,14 @@ margin-left: 0;
 .header-agenda img{
 	width: 100%;
 
+}
+
+.gplay{
+	float: right;
+    margin-right: 299px;
+    padding-top: 24px;
+    background-size: 34%;
+    width: 21%;
 }
 
 .agenda-pages{
