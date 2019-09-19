@@ -5,7 +5,10 @@
 
 html, body{
 	height: 100%;
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
+
+
 
 .games {
 	background-image: url('images/bg.png');
@@ -160,13 +163,20 @@ h1 {
 /*Main Navbar*/
 .navbar {min-height: 70px}
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	padding-top: 10px;
+}
 
 /*Active Link*/
 .navbar-inverse .navbar-nav> .active>a,
 .navbar-inverse .navbar-nav> .active>a:hover,
 .navbar-inverse .navbar-nav> .active>a:focus
 {
-	background-color:#e41b1700
+	background-color:#000;
+}
+
+.navbar-default .navbar-nav>li>a{
+	border-radius:10px;
 }
 /*Navbar Link*/
 .navbar-inverse .navbar-nav> li> a
@@ -185,7 +195,7 @@ h1 {
 	  justify-content: center;
 	  position: absolute;
 	  width: 100%;
-	  left: 0;
+	  left: 11px;
 	  top: 0;
 	}
 }
@@ -247,9 +257,8 @@ h1 {
 	overflow: hidden; 
 	/*background: #EEE; */
 	padding-top: 40px; 
-	/*padding-bottom: 229px;*/
-	
-	margin: 0px;
+	padding-bottom: 100px;
+		margin: 0px;
 }
 .price-table .price-box
 {
@@ -282,22 +291,22 @@ h1 {
 }
 
 .card {
- width: 100%;                 /* Set width of cards */
-  border: 1px solid #beabe6;    /* Set up Border */
-  border-radius: 4px;           /* Slightly Curve edges */
-  overflow: hidden;             /* Fixes the corners */
-  display: inline-flex;                /* Children use Flexbox */
-  flex-direction: column;       /* Rotate Axis */
-  margin:10px;
+	 width: 100%;                 /* Set width of cards */
+	 border: 1px solid #beabe6;    /* Set up Border */
+	 border-radius: 4px;           /* Slightly Curve edges */
+	 overflow: hidden;             /* Fixes the corners */
+	 display: inline-flex;                /* Children use Flexbox */
+	 flex-direction: column;       /* Rotate Axis */
+	 margin:10px;
 }
 
 .card-new{
-	border: 1px solid #e5e0e1;
-	border-radius: 2px;
-	overflow: hidden;             /* Fixes the corners */
-  display: inline-flex;                /* Children use Flexbox */
-  flex-direction: column;       /* Rotate Axis */
-  margin:10px;
+	 border: 1px solid #e5e0e1;
+	 border-radius: 2px;
+	 overflow: hidden;             /* Fixes the corners */
+  	 display: inline-flex;                /* Children use Flexbox */
+  	 flex-direction: column;       /* Rotate Axis */
+  	 margin:10px;
 }
 
 
@@ -319,19 +328,6 @@ h1 {
   padding: 5px 10px;
 }
 
-
-
-/*Start Section Our Clients*/
-.our-clients {background: #EEE; padding-top: 20px; padding-bottom: 20px}
-.our-clients img
-{
-	opacity: 0.4;
-	filter: alpha(opacity=40);
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.our-clients img:hover {opacity: 1}
-/*End Section Our Clients*/
 /*Start Section Footer*/
 .footer {background-image: url("images/footer.png"); color: #AAA; padding: 20px 0px 20px;}
 .footer a {color: #AAA}
@@ -358,7 +354,12 @@ h1 {
 	font-size:17px
 }
 .footer .copyright span {color: #E41B17}
+
+
+
+
 /*End Section Footer*/
+
 /*Start Our Grouping*/
 .our-team, .statistices, .contact-us
 {
@@ -1020,20 +1021,9 @@ h1 {
 	background-color: #17d1e400;
 }
 
-@media only screen and (max-width: 1400px)
-{
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
-padding-top: 10px;
-margin-right: 120px;
-margin-left: 118px;
-}
-.container{
-	padding-right: 110px;
-	padding-left: 110px
-}
-}
 
-@media (min-width: 200px){
+
+/*@media (min-width: 200px){
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
 margin-right: 0px;
 margin-left: 0px;
@@ -1044,7 +1034,7 @@ margin-left: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-}
+}*/
 
 @media (min-width: 768px){
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
@@ -1162,7 +1152,7 @@ margin-left: 0;
 }	
 
 @media only screen and (max-width: 1400px) {
-  .col-xs-12 img {
+  .img-agenda {
   	width: 50%;
   	margin-left: 63px;
   	margin: 15px 94px;
@@ -1172,18 +1162,80 @@ margin-left: 0;
   	padding: 66px 76px 0px;
   }
   .col-lg-6 col-xs-12 img{
-  	width: 50%; margin-left: 203px;
+  	width: 50%;
+  	margin-left: 203px;
   }
 
   .card-body img .img-index{
   	width: 100%;
   }
+
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	padding-top: 10px;
+	/*margin-right: 120px;
+	margin-left: 118px;*/
+}
+.container {
+	padding-right: 133px;
+	padding-left: 133px;
+}
+
+.btn-store{
+ 	background-image: url("images/square_bottun_blue.png");;
+ 	background-repeat: no-repeat;
+ 	/*padding-left: 24px;*/
+ 	border-radius: 10px;
+ 	height: 60px;
+ 	width: 100%;
+ 	background-size: 100%;
+ 	text-align: center;
+ 	border-color: #f4f4f400;
+    background-color: #ffffff00;
+}
+
+/*Button footer*/
+
+.btn-sosmed{
+	width: 10%;
+	padding: 2px;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
 	.container-agenda{
 		padding:28px 0px 19px;
 	}
+
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+	margin-right: 0px;
+	margin-left: 0px;
+	}
+	.container{
+		padding-right: 0px;
+		padding-left: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.btn-store{
+		background-image: url("images/square_bottun_blue.png");
+	 	background-repeat: no-repeat;
+	 	padding-left: 24px;
+	}
+	.btn-store img {
+		width: 170px;
+		padding-right: 26px;
+		text-align: center;
+	}
+
+	/*button footer*/
+
+	.btn-sosmed{
+	width: 7%;
+	padding: 2px;
+}
+
 }
 
 /*store*/
@@ -1191,5 +1243,29 @@ margin-left: 0;
 	width: 100%;
 	margin:-24px 0px 34px;
 }
+
+
+.btn {
+  background: #92c7eb;
+  background-image: url("images/square_bottun_blue.png");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border: none;
+  padding: 20px;
+  width: 70px;
+  border-radius: 10px;
+  height: 70px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn:hover
+{
+  width: 75px;
+  height: 75px;
+}
+
+
+
 
 
