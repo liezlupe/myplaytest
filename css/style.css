@@ -1244,6 +1244,10 @@ margin-left: 0;
 	margin:-24px 0px 34px;
 }
 
+.checked{
+	float:left;
+	padding-left: 61px;
+}
 
 .btn {
   background: #92c7eb;
