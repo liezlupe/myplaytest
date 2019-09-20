@@ -195,7 +195,7 @@ h1 {
 	  justify-content: center;
 	  position: absolute;
 	  width: 100%;
-	  left: 11px;
+	  left: 13px;
 	  top: 0;
 	}
 }
@@ -256,7 +256,7 @@ h1 {
 {
 	overflow: hidden; 
 	/*background: #EEE; */
-	padding-top: 40px; 
+	padding-top: 149px; 
 	padding-bottom: 100px;
 		margin: 0px;
 }
@@ -266,7 +266,7 @@ h1 {
 	padding: 10px;
 	border: 1px solid #DDD;
 	border-radius:1.1rem;
-	margin-bottom: 15px
+	margin-bottom: 15px;
 }
 .price-table .price-box h2 {margin: 5px 0 15px}
 .price-table .price-box:hover p
@@ -956,7 +956,7 @@ h1 {
   border: 0px;
   border-radius: 2.3rem;
   width: 100%;
-  padding: 10px;
+  padding: 34px 11px;
 }
 
 /*pannels-collapse*/
@@ -1180,25 +1180,42 @@ margin-left: 0;
 	padding-right: 133px;
 	padding-left: 133px;
 }
-
-.btn-store{
- 	background-image: url("images/square_bottun_blue.png");;
- 	background-repeat: no-repeat;
- 	/*padding-left: 24px;*/
- 	border-radius: 10px;
- 	height: 60px;
- 	width: 100%;
- 	background-size: 100%;
- 	text-align: center;
- 	border-color: #f4f4f400;
+.store-button{
+ 	background-image: url(images/square_bottun_blue.png);
+    background-repeat: no-repeat;
+    /* padding-left: 24px; */
+    padding-bottom: 20px;
+    padding-right: 36px;
+    border-radius: 10px;
+    height: 60px;
+    margin-left: 27px;
+    width: 100%;
+    background-size: 82%;
+    text-align: center;
+    border-color: #f4f4f400;
     background-color: #ffffff00;
 }
 
 /*Button footer*/
 
 .btn-sosmed{
-	width: 10%;
+	width: 13%;
 	padding: 2px;
+}
+
+.logov3_photo{
+	width: 15%;
+    z-index: 2;
+    margin: -95px -396px;
+    position: absolute;
+}
+
+.character_photo
+{
+	z-index: 2;
+    position: absolute;
+    margin: -211px 33px;
+    width: 30%;
 }
 
 }
@@ -1218,17 +1235,46 @@ margin-left: 0;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	.btn-store{
-		background-image: url("images/square_bottun_blue.png");
-	 	background-repeat: no-repeat;
-	 	padding-left: 24px;
-	}
-	.btn-store img {
-		width: 170px;
-		padding-right: 26px;
-		text-align: center;
-	}
 
+
+	.store-button{
+ 	background-image: url(images/square_bottun_blue.png);
+    background-repeat: no-repeat;
+    /* padding-left: 24px; */
+    padding-bottom: 20px;
+    padding-right: 36px;
+    border-radius: 10px;
+    height: 60px;
+    margin-left: 27px;
+    width: 45%;
+    background-size: 82%;
+    text-align: center;
+    border-color: #f4f4f400;
+    background-color: #ffffff00;
+}
+.logov3_photo{
+	width: 27%;
+    z-index: 2;
+    margin: -51px -222px;
+    position: absolute;
+}
+
+.character_photo
+{
+	z-index: 2;
+    position: absolute;
+    margin: -128px 17px;
+    width: 45%;
+}
+
+.price-table{
+	padding-top: 63px;
+}
+}
+
+button .store-button{
+	padding-left: 10px;
+}
 	/*button footer*/
 
 	.btn-sosmed{
@@ -1247,8 +1293,8 @@ margin-left: 0;
 .checked{
 	float:left;
 	padding-left: 61px;
+	padding-top: 12px;
 }
-
 
 
 
