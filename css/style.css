@@ -12,7 +12,8 @@ html, body{
 
 .games {
 	background-image: url('images/bg.png');
-	background-size: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .banner-games {
@@ -49,7 +50,7 @@ html, body{
 }
 .content-about {
     text-align: center;
-    padding: 6px 230px 20px;
+    padding: 0px 108px 115px;
 }
 
 .content-about h1{
@@ -62,7 +63,7 @@ html, body{
 
 .content-p-about p{
 	color: #010101;
-	margin: -35px 0px 271px;
+	margin: 68px 191px 197px;
 	text-align: center;
 	font-size: 2vw;
 	font-weight: bold;
@@ -91,26 +92,35 @@ h1 {
 
 /*banner - job */
 
-.banner {
+.banner-about-bottom {
     background: url('images/frame_quote.png') no-repeat;
     background-size: contain;
     color: #fff;
     display: flex;
-    margin: -17px 0px;
+    margin: -0px -4px;
 
 }
-.banner:before {
+
+.banner-job {
+    background: url('images/frame_quote.png') no-repeat;
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    margin: -17px -4px;
+
+}
+.banner-job:before {
     content: "";
     float: left;
     padding-bottom: 40%;
 }
-.banner:after {
+.banner-job:after {
     content: "";
     display: table;
     clear: both;
 }
 .container-job {
-    max-width: 768px;
+    max-width: 1124px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -136,21 +146,21 @@ h1 {
   }
 }
 
-@media (max-width: 1400px) and (max-width: 500px)  {
+@media (max-width: 1400px) and (min-width: 500px)  {
 .content p {
 	font-size: 2vw;
-    margin: 37px 0 56px;
+    margin: -32px 32px 100px;
     font-weight: bold;
   }
 
 .content-about {
     text-align: center;
-    padding: 8px 86px 68px;
+    padding: 7px 14px 105px;
 }
 
 .content-p-about p{
 	color: #010101;
-	margin: 28px 104px 122px;
+	margin: 72px 172px 122px;
 	text-align: center;
 	font-size: 2vw;
 	font-weight: bold;
@@ -256,7 +266,6 @@ h1 {
 {
 	overflow: hidden; 
 	/*background: #EEE; */
-	padding-top: 149px; 
 	padding-bottom: 100px;
 		margin: 0px;
 }
@@ -813,7 +822,7 @@ h1 {
   background-color: #e3dbec;  
 }
 .card-footer-index{
-  background-color: #fff;
+  background-color: #eeecec;
 }
 
 .tag {
@@ -1022,24 +1031,15 @@ h1 {
 }
 
 
-
-/*@media (min-width: 200px){
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
-margin-right: 0px;
-margin-left: 0px;
-}
-.container{
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-}*/
-
 @media (min-width: 768px){
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
 margin-left: 0;
 }
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+	margin-right: 190px;
+	margin-left: 72px;
+}
+
 }
 
 
@@ -1062,6 +1062,7 @@ margin-left: 0;
 .index-div{
 	padding: 16px;
 }
+
 @media only screen and (max-width: 500px){
 	.card {
 	 width: 232px;                 /* Set width of cards */
@@ -1173,13 +1174,11 @@ margin-left: 0;
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
 	padding-top: 10px;
+	padding-bottom: 10px;
 	/*margin-right: 120px;
 	margin-left: 118px;*/
 }
-.container {
-	padding-right: 133px;
-	padding-left: 133px;
-}
+
 .store-button{
  	background-image: url(images/square_bottun_blue.png);
     background-repeat: no-repeat;
@@ -1204,20 +1203,6 @@ margin-left: 0;
 	padding: 2px;
 }
 
-.logov3_photo{
-	width: 15%;
-    z-index: 2;
-    margin: -95px -396px;
-    position: absolute;
-}
-
-.character_photo
-{
-	z-index: 2;
-    position: absolute;
-    margin: -211px 33px;
-    width: 30%;
-}
 
 }
 
@@ -1230,13 +1215,6 @@ margin-left: 0;
 	margin-right: 0px;
 	margin-left: 0px;
 	}
-	.container{
-		padding-right: 0px;
-		padding-left: 0px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
 
 	.store-button{
  	background-image: url(images/square_bottun_blue.png);
@@ -1253,20 +1231,6 @@ margin-left: 0;
     text-align: center;
     border-color: #f4f4f400;
     background-color: #ffffff00;
-}
-.logov3_photo{
-	width: 27%;
-    z-index: 2;
-    margin: -51px -222px;
-    position: absolute;
-}
-
-.character_photo
-{
-	z-index: 2;
-    position: absolute;
-    margin: -128px 17px;
-    width: 45%;
 }
 
 .price-table{
@@ -1298,6 +1262,31 @@ button .store-button{
 	padding-top: 12px;
 }
 
+/*image store*/
 
+.top {
+  display: flex;
+  justify-content: center;
+  max-width: 947px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
 
+.line {
+  /*width: 50%;*/
+  z-index: 2;
+}
 
+.logov3_photo{
+	margin: 110px 42px -56px;
+    float: left;
+    width: 33%;
+}
+
+.character_photo{
+	margin: 31px 80px -63px;
+    float: right;
+    width: 131%;
+    z-index: 2;
+    position: inherit;
+}
