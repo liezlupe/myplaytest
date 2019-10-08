@@ -38,7 +38,7 @@ h3 {
 /*----------3.Cards----------*/
 .card {
 	position: relative;
-  	margin:6% 6px 6% -7px;
+  	margin:6% 6px -3% -7px;
   	/*background-color: #fff;*/
   	transition: box-shadow .25s;
   	border-radius: 2px;
