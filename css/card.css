@@ -30,7 +30,7 @@ h3 {
 .card {
 	position: relative;
   	margin:6% 6px 6% -7px;
-  	background-color: #fff;
+  	/*background-color: #fff;*/
   	transition: box-shadow .25s;
   	border-radius: 2px;
    	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -70,6 +70,10 @@ h3 {
   	display: -webkit-flex;
   	display: -ms-flexbox;
   	display: flex;
+  	background-image: url(./images/frame.png);
+  	background-size: 100% 100%;
+  	background-repeat: no-repeat;
+
 }
 .card.horizontal.small .card-image,
  .card.horizontal.medium .card-image,
