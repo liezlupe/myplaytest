@@ -1,5 +1,6 @@
 /*card css*/
 
+@media (min-width: 	320px){
 
 h3 {
 	font-size:1.2em;
@@ -98,4 +99,6 @@ h3 {
 }
 .card .card-image {
   position: relative;
+}
+
 }
