@@ -1,22 +1,31 @@
 /*card css*/
 
+.games{
+	background-image: url('images/bg.jpg');
+	background-size: 100% 100%;
+  	background-repeat: no-repeat;
+}
+
 
 h3 {
-	font-size:1.2em;
-	font-weight:600;
-	text-transform:capitalize;
-	margin:0 0 10px 0;
-	padding:0;
-	color:#555555;
+	font-size: 1.9em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 60px 49px -1px -48px;
+    padding: 0;
+    color: #fff;
+    font-style: italic;
 }
 .btn-styled {
-	background-color:transparent;
-	border:#666666 1.9px solid;
-	color:#666666;
-	font-size:0.85em;
-	border-radius:30px;
-	padding:5px 13px 4px 13px;
-	margin:10px 0 10px 0;
+	background-color: #00ffc6;
+    border: #0e9577 1.9px solid;
+    color: #006a53;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 30px;
+    padding: 5px 13px 4px 13px;
+    width: 102px;
+    margin: 10px 0 11px 0;
 }
 .btn-styled:hover, .btn-styled:active  {
 	background-color:#ededed;
@@ -51,7 +60,7 @@ h3 {
   width: 100%;
 }
 .card .card-content {
-  padding: 15px 10px 0 0;
+  padding:49px 19px 20px 0px;
   border-radius: 0 0 2px 2px;
 }
 
@@ -103,4 +112,36 @@ h3 {
 }
 .card .card-image {
   position: relative;
+}
+
+
+/*Start Section Footer*/
+.footer {background-image: url("images/footer.png"); color: #AAA; padding: 20px 0px 20px;}
+.footer a {color: #AAA}
+/*.footer a:hover {color: #FFF}*/
+.footer h3 {color: #E41B17; letter-spacing: 1px; margin: 30px 0 20px}
+.footer .three-columns {overflow: hidden}
+.footer .three-columns li {width: 33.3333%; float: left; padding: 5px 0}
+.footer .social-list {overflow: hidden; margin: 20px 0 10px}
+.footer .social-list li
+{
+	float: left;
+	margin-right: 3px;
+	opacity: 0.7;
+	filter: alpha(opacity=70%);
+}
+.footer .social-list li:hover {opacity: 1}
+.footer .img-thumbnail {background: rgba(0, 0, 0, 0.2); border: 1px solid #444; margin-bottom: 5px}
+.footer .copyright
+{
+	background:#E41B17;
+	color: #AAA;
+	padding: 5px 0;
+	margin-top:30px;
+	font-size:17px
+}
+.footer .copyright span {color: #E41B17}
+
+.btn-sosmed {
+	width: 8%;
 }
