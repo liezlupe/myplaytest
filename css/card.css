@@ -29,14 +29,14 @@ h3 {
 /*----------3.Cards----------*/
 .card {
 	position: relative;
-  	margin:2% 5px 2% 5px;
+  	margin:6% 6px 6% -7px;
   	background-color: #fff;
   	transition: box-shadow .25s;
   	border-radius: 2px;
    	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	padding:0;
-	min-width:400px;
-	max-width:500px;
+	min-width:387px;
+	max-width:453px;
 }
 .card .card-image img {
   display: block;
