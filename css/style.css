@@ -20,6 +20,8 @@ html, body{
     background: url('images/banner01.png') no-repeat center;
     padding: 450px 87px 50px;
     display: flex;
+
+    
 }
 
 /*Banner agenda*/
@@ -213,7 +215,7 @@ h1 {
 	  justify-content: center;
 	  position: absolute;
 	  width: 100%;
-	  left: 27px;
+	  left: 16px;
 	  top: 0;
 	}
 }
@@ -1042,10 +1044,19 @@ h1 {
 @media (min-width: 768px){
 /*.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
 margin-left: 0;*/
+/*}*/
+
+.navbar-brand{
+	float: left;
+    height: 50px;
+    padding: 17px 9px 20px 33px;
+    font-size: 18px;
+    line-height: 20px;
 }
+
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
-	/*margin-right: 164px;
-	margin-left: 179px;*/
+	margin-right: 186px;
+	margin-left: 186px;
 }
 
 /*job*/
@@ -1096,10 +1107,10 @@ margin-left: 0;*/
 
 }
 
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+/*.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
 	margin-right: 0px;
 	margin-left: 0px;
-}
+}*/
 
 .content-p-about p{
 	color: #010101;
